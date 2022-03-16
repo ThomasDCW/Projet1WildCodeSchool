@@ -55,11 +55,14 @@ article {
     width: 20%;
     height: 55vh;
     position: relative;
+    
 }
 
 section article  img{
     height: 100%;
     width: 100%;
+    
+
 }
 
 article p {
@@ -68,10 +71,47 @@ article p {
     width: 100%;
     padding: 5% 0 ;
     text-align: center;
-    bottom: -17px;
+    bottom: -19px;
     color: #FFF;
     font-weight: bold;
     font-size: large;
     text-shadow: 3px 3px 1px  rgb(0, 0, 0);
 }
 
+
+/* Responsive 768px */
+
+@media only screen and (max-device-width : 768px){
+    nav img{
+        height: 10vh;
+        width: auto;
+    }
+
+    .baseline{
+        
+        margin: 0 10% 0 10%
+    
+    }
+
+    .baseline h2 {
+        font-size: 1.3rem;
+    }
+
+    .baseline p {
+        font-size: 0.8rem;
+    }
+
+    .categories{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+
+    article {
+       margin-bottom: 1rem;
+        height: 50%;
+        width: 70vw;
+        position: relative;
+
+        }
+}
