@@ -1,3 +1,6 @@
+.wip{
+    border : 2px dotted red;
+}
 /*VARIABLES*/
 :root{
     --primary : #7CBD1E;
@@ -103,9 +106,9 @@ article p {
 footer {
     background-color:#ebebeb;
     display: flex;
-    justify-content: center;
-    position: absolute; 
+    justify-content: center; 
     bottom: 0;
+    width: 100vw;
 }
 
 footer img {
@@ -123,7 +126,7 @@ footer p {
 /* Responsive 768px */
 
 @media only screen and (max-device-width : 768px){
-    nav img{
+   nav img{
         height: 10vh;
         width: auto;
     }
