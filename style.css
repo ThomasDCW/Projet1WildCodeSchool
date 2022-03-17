@@ -55,11 +55,14 @@ article {
     width: 20%;
     height: 55vh;
     position: relative;
+    border-radius: 15px;
+    margin-bottom: 1rem;
 }
 
 section article  img{
     height: 100%;
     width: 100%;
+    border-radius: 15px;
 }
 
 article p {
@@ -73,5 +76,19 @@ article p {
     font-weight: bold;
     font-size: large;
     text-shadow: 3px 3px 1px  rgb(0, 0, 0);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
+.zoom {
+       
+    transition: transform .2s;
+   
+   
+  }
+  
+  .zoom:hover {
+   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   box-shadow: 1px 8px 20px grey;
+   
+  }
