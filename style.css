@@ -1,6 +1,6 @@
 /*VARIABLES*/
 :root{
-    --primary : #7CBD1E;
+    --primary : #3FC060;
 }
 
 /*BODY*/
@@ -79,7 +79,7 @@ section article  img{
 
 article h3 {
     position: absolute;
-    background-color: rgba(124, 189, 30, 0.7);
+    background-color: rgba(63, 192, 96, 0.7);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 100%;
