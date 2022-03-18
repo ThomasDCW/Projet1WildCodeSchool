@@ -57,10 +57,12 @@ nav{
 }
 .div1 h1{
     margin: 0;
+    padding-top: 1rem;
     margin-left: 5%;
 }
 .div1 h2{
     margin: 0;
+    padding-top: 1rem;
     margin-left: 5%;
 }
 ul li{
