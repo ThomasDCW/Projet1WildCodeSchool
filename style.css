@@ -3,19 +3,18 @@
 }
 /*VARIABLES*/
 :root{
-    --primary : #7CBD1E;
+    --primary : #3FC060;
 }
 
 /*BODY*/
 
 body{
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position:relative;
-    /*background-image: url("/Images/background/background6.webp");
-    background-repeat: no-repeat;
-    background-size:cover;*/
+    background-color:whitesmoke;
+    
 
 }
 
@@ -25,7 +24,7 @@ nav img{
     height: auto;
     width: 20%;
 }
-nav{
+nav a{
     background-color:var(--primary);
     display: flex;
     justify-content: center;
@@ -56,7 +55,7 @@ nav{
 .categories{
 display: flex;
 justify-content: space-around;
-margin: 3% 7% 0 7%;
+margin: 3% 7% 3% 7%;
 }
 
 article {
@@ -82,9 +81,9 @@ section article  img{
 
 }
 
-article p {
+article h3 {
     position: absolute;
-    background-color: rgba(124, 189, 30, 0.7);
+    background-color: rgba(63, 192, 96, 0.7);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 100%;
@@ -106,9 +105,10 @@ footer {
     display: flex;
 
     justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+
+    
+
+
 }
 
 footer img {
@@ -126,9 +126,11 @@ footer p {
 /* Responsive 768px */
 
 @media only screen and (max-device-width : 768px){
-   nav img{
-        height: 10vh;
-        width: auto;
+
+    nav img{
+        height: auto;
+        width: 50%;
+
     }
 
     .baseline{
@@ -167,7 +169,7 @@ footer p {
         footer img {
             margin-top:10px;
             margin-bottom:10px;
-            width:15vw;
+            width:20vw;
             padding-left: 1rem;
         }
         
