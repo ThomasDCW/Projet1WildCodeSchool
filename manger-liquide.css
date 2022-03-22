@@ -3,8 +3,10 @@
 }
 /*VARIABLES*/
 :root{
-    --primary : #7CBD1E;
-}
+        --primary : #028f21;
+        --secondary : white;
+    }
+
 .restaurant1{
     height: 100vh;
 }
@@ -27,6 +29,7 @@ body{
 main{
     margin-left: 7.5%;
     margin-right: 7.5%;
+    height: 100vh;
 }
 /*NAV*/
 
@@ -159,3 +162,4 @@ footer p {
     color:rgb(63, 58, 58);
     padding-left: 4%;
 }
+
