@@ -181,6 +181,7 @@ footer p {
         footer p {
             color:rgba(63, 58, 58, 0.9);
         }
+
     
 }
 
@@ -194,3 +195,4 @@ span.fade {
     opacity: 1;
     transform: translateY(0px);
 }
+
