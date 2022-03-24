@@ -130,7 +130,10 @@ footer p {
 /* Responsive 768px */
 
 @media only screen and (max-device-width : 768px){
-
+body{
+    background-image: none;
+    background-color: rgb(32, 30, 30) ;
+}
     nav img{
         height: auto;
         width: 50%;
