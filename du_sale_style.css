@@ -55,7 +55,6 @@ nav a{
    
 }
 ul{
-    
     padding-left: 0;
     margin: 0;
 }
@@ -135,7 +134,7 @@ ul li{
     justify-content: center;
 
 }
-/*FOOTER*/
+/* FOOTER
 footer {
     background-color:#ebebeb;
     display: flex;
@@ -166,7 +165,7 @@ footer p {
 
 	
 
-}
+} */
 /*responsive*/
 @media only screen and (max-device-width : 768px){
 
@@ -209,6 +208,7 @@ footer p {
 
     .div3{
         margin-bottom: 0;
+        padding-top: 2rem;
     }
 
     .div4{
@@ -244,8 +244,7 @@ footer p {
     }
 
     p{
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
-
 }
 	
