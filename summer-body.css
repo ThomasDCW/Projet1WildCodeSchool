@@ -1,6 +1,6 @@
 /*VARIABLES*/
 :root{
-    --primary : #3FC060;
+    --primary : #028f21;
 }
 
 
@@ -21,10 +21,12 @@ nav img{
     height: auto;
     width: 20%;
 }
-nav{
+nav a{
     background-color:var(--primary);
     display: flex;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
 }
 /*GRID*/
 .parent {
@@ -39,12 +41,15 @@ nav{
     box-sizing: border-box;
     background-color: rgb(210, 210, 210);  
       padding-right: 1rem; 
+      padding-top:0.5rem;
+      padding-bottom:1rem;
 }
 
 .div1 h2{
     margin: 3% 0 3% 5%;
+    padding:0.5rem 0 0.5rem 0;
     font-size: 1.5rem; 
-    
+    margin-top: 0;
 }
 ul{
     padding-left: 0;
@@ -66,15 +71,17 @@ ul li{
     padding-right: 0.5rem;
 }
 /*DIV2 : PHOTO DU RESTAURANT*/
-.photo-restau1 { 
+.div2 { 
     grid-area: 1 / 2 / 3 / 4;
     box-sizing: border-box;
     background-image: url('Images/SUMMERBODY/Bagel Corner/Bagelcorner2.jpg');
     background-image: cover;
+    background-position: center;
 }
-.photo-restau1 img{
+.div2 img{
     max-width:100%;
 	max-height:100%;
+   
 }
 
 /*DIV2 : PHOTO DU RESTAURANT*/
@@ -82,12 +89,13 @@ ul li{
     grid-area: 1 / 2 / 3 / 4;
     box-sizing: border-box;
     background-image: url('Images/SUMMERBODY/Bombora/Bombora2.jpg');
-    background-image: cover;
+    
 }
 .photo-restau2 img{
     max-width:100%;
 	max-height:100%;
-    
+    background-position: center;
+    background-image: cover;
 }
 
 /*DIV3 NOTRE AVIS*/
@@ -95,6 +103,8 @@ ul li{
     grid-area: 3 / 2 / 4 / 4; 
     box-sizing: border-box;
     background-color: rgb(210, 210, 210);
+    padding-top:0.5rem;
+      padding-bottom:1rem;
 }
 .div3 h2{
     padding-left: 5%;
@@ -156,3 +166,49 @@ footer p {
     width:100%;
     position:absolute;
 }
+
+/*RESPONSIVE*/
+@media only screen and (max-device-width : 768px){
+    nav img{
+        height: auto;
+        width: 50%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/ 
+            
+        margin: 0;
+        
+    }
+    .parent {
+        display: initial;
+    }
+    .div2 {
+       
+        padding-bottom: 20rem;
+        border-radius: 0;
+       
+    }
+        .div1,.div2,.div3,.div4
+        {
+            border-radius: 0%;
+            margin: 0;
+        }
+  
+        .restaurant1 .div2 { 
+          
+            margin-top: 0;
+            box-sizing: border-box;
+            border-radius: 0;
+        }
+        .restaurant2 .div2 {
+            border-radius: 0;
+            margin-top: 0;
+        }
+        .restaurant1{
+            margin-bottom: 0;
+        }
+        h2,ul,p {
+            margin:0;
+        }
