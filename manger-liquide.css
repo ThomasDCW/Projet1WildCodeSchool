@@ -51,13 +51,15 @@ nav a{
     margin: 3% 0 3% 5%;
     padding: 0.5rem 0 0.5rem 0;
     font-size: 1.5rem; 
+    margin-top: 0;
 }
 ul{
-    padding-left: 0; 
+    padding-left: 0;
+    margin: 0;
 }
 ul li{
     margin-left: 5%;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.7rem; 
     list-style: none;
     padding-left: 0;
@@ -104,6 +106,8 @@ ul li{
     padding-right: 5%;
     padding-left: 5vh;
     text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 /*LOCALISATION*/
 .div4 { 
@@ -126,7 +130,7 @@ ul li{
     position:absolute;
 }
 
-/*FOOTER*/
+/* FOOTER
 footer {
     background-color:#ebebeb;
     display: flex;
@@ -145,7 +149,7 @@ footer img {
 footer p {
     color:rgb(63, 58, 58);
     padding-left: 4%;
-}
+} */
 
 
 /*responsive*/
