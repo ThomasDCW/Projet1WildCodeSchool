@@ -167,12 +167,20 @@ footer p {
     position:absolute;
 }
 
-/*RESPONSIVE*/
+
+
+/*responsive*/
 @media only screen and (max-device-width : 768px){
+
+    main{
+        margin: 0;
+    }
+
     nav img{
         height: auto;
         width: 50%;
     }
+
     main {
         display: flex;
         flex-direction: column;
@@ -212,3 +220,74 @@ footer p {
         h2,ul,p {
             margin:0;
         }
+
+
+    .restaurant1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 0;
+        gap: 0;
+        }
+
+    .parent{
+        display:initial;
+    }
+
+    .restaurant1 .div2 { 
+        margin-top: 0;
+        border-radius: 0%;
+    }
+
+    
+    .div2{
+        padding-top: 20rem;
+    }
+
+    .div1{
+        margin: 0;
+    }
+
+    .div3{
+        margin-bottom: 0;
+    }
+
+    .div4{
+        margin-bottom: 0;
+    }
+
+    .restaurant1 div{
+        border-radius: 0;
+    }
+
+
+    .restaurant2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+
+    .restaurant2 .div2{
+        margin-top: 0;
+        border-radius: 0%;
+    }
+
+    .restaurant2 div{
+        border-radius: 0;
+    }
+
+    h2{
+        margin: 0;
+    }
+
+    ul{
+        margin: 0;
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+}
+
