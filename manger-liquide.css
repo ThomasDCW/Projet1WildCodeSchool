@@ -5,12 +5,8 @@
 :root{
     --primary : #7CBD1E;
 }
-.restaurant1{
-    height: 100vh;
-}
-.restaurant2{
-    height: 100vh;
-}
+
+
 .next{
     border: 1px solid black;
 }
@@ -29,7 +25,23 @@ main{
     margin-right: 7.5%;
 }
 /*NAV*/
-
+#hamburgerBtn{
+    display: none;
+}
+#navBar {
+    display: none;
+    
+    position :fixed;
+    color: #ebebeb;
+    top:0;
+    right:0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-items {
+    display: none;
+} 
 nav img{
     height: auto;
     width: 20%;
@@ -159,3 +171,105 @@ footer p {
     color:rgb(63, 58, 58);
     padding-left: 4%;
 }
+
+/*RESPONSIVE*/
+@media only screen and (max-device-width : 768px){
+    nav img{
+        height: auto;
+        width: 50%;
+
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/ 
+            
+        margin: 0;
+        
+    }
+    .parent {
+        display: initial;
+    }
+    .div2 {
+       
+        padding-bottom: 20rem;
+        border-radius: 0;
+       
+
+    }
+        .div1,.div2,.div3,.div4
+        {
+            border-radius: 0%;
+            margin: 0;
+        }
+  
+        .restaurant1 .div2 { 
+          
+            margin-top: 0;
+            box-sizing: border-box;
+            border-radius: 0;
+
+        }
+        .restaurant2 .div2 {
+            border-radius: 0;
+            margin-top: 0;
+
+        }
+        .restaurant1{
+            margin-bottom: 0;
+        }
+        h2,ul,p {
+            margin:0;
+        }
+        
+        #hamburgerBtn{
+            display: inline-block;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            z-index: 10;
+             
+        }
+        #navBar {
+            display: inline-block;
+            width: 30vh;
+            height: 100vh;
+            position :fixed;
+            color: #ebebeb;
+            background-color: rgb(52, 52, 56);
+            top:0;
+            right:0; 
+        
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;*/
+            justify-content: space-around;
+            opacity: 0.8;
+            transform: translateX(500px);
+            transition: transform 500ms;
+        }
+        #navBar.open {
+            transform: translateX(0);
+            
+        }
+        .nav-items {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 30px;
+            padding: 0 10px;
+            text-decoration: none;
+            
+        }
+        .nav-items >li:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+        }
+        .nav-items li a{
+            text-decoration: none;
+            color:white;
+        }
+    
+   
+    
+    }
